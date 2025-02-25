@@ -15,12 +15,12 @@ function App() {
                     <Routes>
                         <Route path="/" element={<VideoPage></VideoPage>} />
                         <Route
-                            path="/Kannada"
+                            path="videoPage/Kannada"
                             element={<VideoPageKannada />}
                         ></Route>
-                        <Route path="/Tamil" element={<VideoPageTamil />}></Route>
+                        <Route path="videoPage/Tamil" element={<VideoPageTamil />}></Route>
                         <Route
-                            path="/Telugu"
+                            path="videoPage/Telugu"
                             element={<VideoPageTelugu />}
                         ></Route>
                     </Routes>

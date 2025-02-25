@@ -49,7 +49,7 @@ function VideoPageTelugu() {
     <>
       <nav className="navbar-videos m-2">
         <div className="center">
-          <a href="/videoPage">
+          <a href="/">
             <button className="btn btn-warning">Back</button>
           </a>
         </div>
