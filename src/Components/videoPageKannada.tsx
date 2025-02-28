@@ -61,10 +61,10 @@ function VideoPageKannada() {
             </a>
           </div>
         </nav>
-  
+
         <div className="videos-parent">
           <div className="center">
-            <div className="video-page">
+            <div className="videos">
               <ul className="components-list">
                 {videoList.map((video) => (
                   <>
