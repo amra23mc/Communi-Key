@@ -52,42 +52,45 @@ function VideoPageKannada() {
 
   return (
     <>
-      <nav className="navbar-videos m-2">
-        <div className="center">
-          <a href="/">
-            <button className="btn btn-warning">Back</button>
-          </a>
-        </div>
-      </nav>
 
-      <div className="videos-parent">
-        <div className="center">
-          <div className="video-page">
-            <ul className="components-list">
-              {videoList.map((video) => (
-                <>
-                  {/* <video autoPlay className="video-item">
-                  <source src={video} />
-                </video> */}
+      <div className="videoPage">
+        <nav className="navbar-videos m-2">
+          <div className="center">
+            <a href="/">
+              <button className="btn btn-warning">Back</button>
+            </a>
+          </div>
+        </nav>
+  
+        <div className="videos-parent">
+          <div className="center">
+            <div className="video-page">
+              <ul className="components-list">
+                {videoList.map((video) => (
+                  <>
+                    {/* <video autoPlay className="video-item">
+                    <source src={video} />
+                  </video> */}
 
-                  <button
-                    onClick={() => setIndex(videoList.indexOf(video))}
-                    className="video-component"
-                  >
-                    {" "}
-                    {names[videoList.indexOf(video)]}
-                  </button>
-                </>
-              ))}
-            </ul>
+                    <button
+                      onClick={() => setIndex(videoList.indexOf(video))}
+                      className="video-component"
+                    >
+                      {" "}
+                      {names[videoList.indexOf(video)]}
+                    </button>
+                  </>
+                ))}
+              </ul>
 
-            <video
-              src={videoList[index]}
-              autoPlay
-              muted
-              controls
-              className="video-item"
-            ></video>
+              <video
+                src={videoList[index]}
+                autoPlay
+                muted
+                controls
+                className="video-item"
+              ></video>
+            </div>
           </div>
         </div>
       </div>
