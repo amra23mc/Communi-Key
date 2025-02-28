@@ -1,6 +1,7 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
+
+  background-color: #f2e9d6;
 
   display: flex;
   flex-direction: column;
@@ -9,15 +10,17 @@
 }
 
 :root {
-  --color-primary: #6aa8ee;
-  --color-accent: #e55f5f;
+  --color-primary: #5370F9;
+  --color-accent: #FF6161;
 }
 
 body {
+  background: #f2e9d6;
   font-size: 2.4rem;
 }
 
 .center {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -41,289 +44,289 @@ body {
   grid-template-columns: 30% 70%;
 }
 
-/* TextBox */
-.textbox {
-  background-color: #6aa8ee;
+/*!* TextBox *!*/
+/*.textbox {*/
+/*  background-color: #6aa8ee;*/
 
-  border: 5px solid #498bd6;
+/*  border: 5px solid #498bd6;*/
 
-  border-radius: 25px;
+/*  border-radius: 25px;*/
 
-  padding: 1rem;
+/*  padding: 1rem;*/
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
-.textbox p {
-  text-align: center;
-}
+/*.textbox p {*/
+/*  text-align: center;*/
+/*}*/
 
-.blue {
-  background-color: var(--color-primary);
-}
-.red {
-  background-color: var(--color-accent);
-  border: solid 5px #cc4949;
-  color: aliceblue;
-}
-/* TextBox */
+/*.blue {*/
+/*  background-color: var(--color-primary);*/
+/*}*/
+/*.red {*/
+/*  background-color: var(--color-accent);*/
+/*  border: solid 5px #cc4949;*/
+/*  color: aliceblue;*/
+/*}*/
+/*!* TextBox *!*/
 
-/* PsychLearn */
-.content {
-  height: max-content;
-  background-image: radial-gradient(yellow, white 70%);
-  animation: pull-left ease-in-out;
-  animation-timeline: scroll();
-  animation-range: entry 0% cover 30%;
-}
+/*!* PsychLearn *!*/
+/*.content {*/
+/*  height: max-content;*/
+/*  background-image: radial-gradient(yellow, white 70%);*/
+/*  animation: pull-left ease-in-out;*/
+/*  animation-timeline: scroll();*/
+/*  animation-range: entry 0% cover 30%;*/
+/*}*/
 
-@media screen and (min-width: 700px) {
-  .content {
-    animation-range: entry 0% cover 40%;
-  }
-}
+/*@media screen and (min-width: 700px) {*/
+/*  .content {*/
+/*    animation-range: entry 0% cover 40%;*/
+/*  }*/
+/*}*/
 
-@keyframes pull-left {
-  from {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateX(-100rem);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0rem);
-  }
-}
+/*@keyframes pull-left {*/
+/*  from {*/
+/*    opacity: 0;*/
+/*    filter: blur(10px);*/
+/*    transform: translateX(-100rem);*/
+/*  }*/
+/*  to {*/
+/*    opacity: 1;*/
+/*    filter: blur(0px);*/
+/*    transform: translateX(0rem);*/
+/*  }*/
+/*}*/
 
-/* .content:hover {
-  background-image: radial-gradient(yellow 20%, white 90%);
-} */
+/*!* .content:hover {*/
+/*  background-image: radial-gradient(yellow 20%, white 90%);*/
+/*} *!*/
 
-.PsychLearn-header {
-  text-decoration: underline;
-  margin-top: 30vh;
-  font-size: 2.3rem;
-  transition: all;
-}
-.PsychLearn-header:hover {
-  animation: PsychLearnHeader 3s forwards ease-in;
-}
+/*.PsychLearn-header {*/
+/*  text-decoration: underline;*/
+/*  margin-top: 30vh;*/
+/*  font-size: 2.3rem;*/
+/*  transition: all;*/
+/*}*/
+/*.PsychLearn-header:hover {*/
+/*  animation: PsychLearnHeader 3s forwards ease-in;*/
+/*}*/
 
-@keyframes PsychLearn-header {
-  0% {
-    text-decoration: underline;
-    margin-top: 30vh;
-    font-size: 2.3rem;
-  }
-  70% {
-    font-size: 2rem;
-  }
-  100% {
-    align-self: flex-start;
-  }
-}
+/*@keyframes PsychLearn-header {*/
+/*  0% {*/
+/*    text-decoration: underline;*/
+/*    margin-top: 30vh;*/
+/*    font-size: 2.3rem;*/
+/*  }*/
+/*  70% {*/
+/*    font-size: 2rem;*/
+/*  }*/
+/*  100% {*/
+/*    align-self: flex-start;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 600px) {
-  .PsychLearn-header {
-    margin-top: 5vh;
-  }
-}
+/*@media screen and (max-width: 600px) {*/
+/*  .PsychLearn-header {*/
+/*    margin-top: 5vh;*/
+/*  }*/
+/*}*/
 
-.learning-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*.learning-box {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
 
-  text-align: center;
-  font-weight: bold;
+/*  text-align: center;*/
+/*  font-weight: bold;*/
 
-  width: auto;
-  max-height: 40vh;
+/*  width: auto;*/
+/*  max-height: 40vh;*/
 
-  padding: 2rem;
-  padding-right: 2rem;
+/*  padding: 2rem;*/
+/*  padding-right: 2rem;*/
 
-  background: #ea4f4f;
-  box-shadow: 0.5rem 0.5rem black;
-  border-radius: 10px;
-  transition: all 0.5s, ease-in-out, 0.3s;
-}
+/*  background: #ea4f4f;*/
+/*  box-shadow: 0.5rem 0.5rem black;*/
+/*  border-radius: 10px;*/
+/*  transition: all 0.5s, ease-in-out, 0.3s;*/
+/*}*/
 
-.learning-box:last-child {
-  background: #6aa8ee;
-}
+/*.learning-box:last-child {*/
+/*  background: #6aa8ee;*/
+/*}*/
 
-.learning-box:hover {
-  transform: rotateY(15deg);
-  box-shadow: 0.5rem 0.5rem 10px black;
-}
+/*.learning-box:hover {*/
+/*  transform: rotateY(15deg);*/
+/*  box-shadow: 0.5rem 0.5rem 10px black;*/
+/*}*/
 
-.learning-box p {
-  max-height: 35vh;
-  overflow-y: scroll;
-  color: white;
-}
+/*.learning-box p {*/
+/*  max-height: 35vh;*/
+/*  overflow-y: scroll;*/
+/*  color: white;*/
+/*}*/
 
-@media screen and (min-width: 700px) {
-  .learning-box p {
-    overflow: hidden;
-  }
-}
+/*@media screen and (min-width: 700px) {*/
+/*  .learning-box p {*/
+/*    overflow: hidden;*/
+/*  }*/
+/*}*/
 
-.images {
-  max-height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+/*.images {*/
+/*  max-height: 40vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between;*/
+/*}*/
 
-.images img {
-  width: auto;
-  max-width: 10rem;
-  height: max-content;
+/*.images img {*/
+/*  width: auto;*/
+/*  max-width: 10rem;*/
+/*  height: max-content;*/
 
-  padding: 1rem;
-  align-self: center;
-  margin: 2rem;
-}
+/*  padding: 1rem;*/
+/*  align-self: center;*/
+/*  margin: 2rem;*/
+/*}*/
 
-@media screen and (min-width: 700px) {
-  .images:nth-last-child() {
-    margin-left: 10rem;
-  }
-}
+/*@media screen and (min-width: 700px) {*/
+/*  .images:nth-last-child() {*/
+/*    margin-left: 10rem;*/
+/*  }*/
+/*}*/
 
-/* PsychLearn */
+/*!* PsychLearn *!*/
 
-/* Title */
-.title {
-  height: 90vh;
+/*!* Title *!*/
+/*.title {*/
+/*  height: 90vh;*/
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
-.video-formatting {
-  width: 100vw;
-  padding: 2rem;
-  text-align: center;
-}
+/*.video-formatting {*/
+/*  width: 100vw;*/
+/*  padding: 2rem;*/
+/*  text-align: center;*/
+/*}*/
 
-.intro-vid {
-  max-width: 85%;
-  width: 100%;
+/*.intro-vid {*/
+/*  max-width: 85%;*/
+/*  width: 100%;*/
 
-  border-radius: 15px;
-  box-shadow: 1rem 1rem black;
-}
-/* Title */
+/*  border-radius: 15px;*/
+/*  box-shadow: 1rem 1rem black;*/
+/*}*/
+/*!* Title *!*/
 
-/* About Me */
-@keyframes pop {
-  from {
-    transform: scale(0.0000001);
-  }
+/*!* About Me *!*/
+/*@keyframes pop {*/
+/*  from {*/
+/*    transform: scale(0.0000001);*/
+/*  }*/
 
-  to {
-    transform: scale(0.9);
-  }
-}
+/*  to {*/
+/*    transform: scale(0.9);*/
+/*  }*/
+/*}*/
 
-.aboutme {
-  margin-top: 40vh;
-  animation: pop, ease-in-out;
-  animation-timeline: view();
-  animation-range: cover 0% 60%;
-}
+/*.aboutme {*/
+/*  margin-top: 40vh;*/
+/*  animation: pop, ease-in-out;*/
+/*  animation-timeline: view();*/
+/*  animation-range: cover 0% 60%;*/
+/*}*/
 
-.head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/*.head {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
 
-.changemaker-textbox:first-of-type {
-  margin-left: 1rem;
-}
+/*.changemaker-textbox:first-of-type {*/
+/*  margin-left: 1rem;*/
+/*}*/
 
-.changemaker-image {
-  box-shadow: 0.3rem 0.3rem black;
-  border-radius: 50%;
+/*.changemaker-image {*/
+/*  box-shadow: 0.3rem 0.3rem black;*/
+/*  border-radius: 50%;*/
 
-  height: 5rem;
-  width: 5rem;
-}
+/*  height: 5rem;*/
+/*  width: 5rem;*/
+/*}*/
 
-.others {
-  padding: 1rem;
+/*.others {*/
+/*  padding: 1rem;*/
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  flex-wrap: wrap;*/
+/*}*/
 
-.person {
-  margin-top: 3rem;
+/*.person {*/
+/*  margin-top: 3rem;*/
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
-.person:nth-of-type(even) {
-  flex-direction: column-reverse;
-}
-/* About Me */
+/*.person:nth-of-type(even) {*/
+/*  flex-direction: column-reverse;*/
+/*}*/
+/*!* About Me *!*/
 
-/* Navbar */
+/*!* Navbar *!*/
 
-.navbar {
-  width: 100vw;
-  height: 10vh;
+/*.navbar {*/
+/*  width: 100vw;*/
+/*  height: 10vh;*/
 
-  background-color: #033249;
-}
+/*  background-color: #033249;*/
+/*}*/
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+/*.row {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: space-between;*/
+/*}*/
 
-.navbar-videos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+/*.navbar-videos {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
-.logo-parent {
-  width: auto;
-  height: 100%;
-}
+/*.logo-parent {*/
+/*  width: auto;*/
+/*  height: 100%;*/
+/*}*/
 
-.logo {
-  width: auto;
-  height: 100%;
-  margin-left: 1rem;
+/*.logo {*/
+/*  width: auto;*/
+/*  height: 100%;*/
+/*  margin-left: 1rem;*/
 
-  transform: scale(1);
-}
+/*  transform: scale(1);*/
+/*}*/
 
-.videoButton {
-  margin-right: 1rem;
-}
+/*.videoButton {*/
+/*  margin-right: 1rem;*/
+/*}*/
 
-/* Navbar */
+/*!* Navbar *!*/
 
 /* videoPage */
 
@@ -336,6 +339,8 @@ body {
 }
 
 .videos-parent {
+  width: 100vw;
+
   height: 98vh;
 
   display: flex;
@@ -345,25 +350,15 @@ body {
 }
 
 .video-page {
+  width: 100%;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.video-item {
-  height: 100%;
-  width: 70vw;
-
-  margin-right: 1rem;
-  margin-top: 1rem;
-
-  border: 5px dotted #498bd6;
-  border-radius: 20px;
-
-  float: right;
-}
 .components-list {
-  margin: 1rem;
+  margin-right: 1rem;
 
   max-height: 40vh;
 
@@ -393,7 +388,8 @@ a {
 
   margin-bottom: 1rem;
 
-  background-color: #e55f5f;
+
+  background-color: var(--color-accent);
   border: none;
   border-radius: 20px;
 
@@ -412,6 +408,19 @@ a {
 }
 .video-component:hover {
   transform: scale(1.1);
+}
+
+.video-item {
+  height: 100%;
+  width: 65vw;
+
+
+  margin-top: 1rem;
+
+  border: 5px dotted var(--color-primary);
+  border-radius: 20px;
+
+  float: right;
 }
 
 /* videoPage */
