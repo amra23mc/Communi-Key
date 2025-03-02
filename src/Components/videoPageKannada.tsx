@@ -23,6 +23,11 @@ function VideoPageKannada() {
 
   const videoListRef = ref(storage, "videos/Kannada");
 
+  // TODO: to add multiple folders and render them, all you have to do is have multiple
+  //  folder arrays, and each should reference a folder easily
+  //  Ex:  ref(storage, 'videos/' + 'i'), i being the folder number
+  //  it should be named appropriately
+
   const [index, setIndex] = useState(0);
 
   const names = [
