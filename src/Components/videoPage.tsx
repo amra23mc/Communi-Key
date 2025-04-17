@@ -1,12 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-
-import VideoPageKannada from "./videoPageKannada";
-import VideoPageTamil from "./videoPageTamil";
-import VideoPageTelugu from "./videoPageTelugu";
 
 function VideoPage() {
     return (
@@ -27,6 +20,11 @@ function VideoPage() {
                         </button>
                         <ul className="dropdown-menu">
                             <li>
+                                <a className="dropdown-item" href="videoPage/Test">
+                                    Test
+                                </a>
+                            </li>
+                            <li>
                                 <a className="dropdown-item" href="videoPage/Kannada">
                                     Kannada
                                 </a>
@@ -37,20 +35,14 @@ function VideoPage() {
                                 </a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="videoPage/Telagu">
-                                    Telagu
+                                <a className="dropdown-item" href="videoPage/Telugu">
+                                    Telugu
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <Routes>
-                <Route path="videoPage/Kannada" element={<VideoPageKannada />}></Route>
-                <Route path="videoPage/Tamil" element={<VideoPageTamil />}></Route>
-                <Route path="videoPage/Telugu" element={<VideoPageTelugu />}></Route>
-            </Routes>
         </>
     );
 }

@@ -26,7 +26,7 @@ function VideoPageKannada() {
   // TODO: to add multiple folders and render them, all you have to do is have multiple
   //  folder arrays, and each should reference a folder easily
   //  Ex:  ref(storage, 'videos/' + 'i'), i being the folder number
-  //  it should be named appropriately
+  //  it should be named appropriately (the number)
 
   const [index, setIndex] = useState(0);
 
@@ -70,13 +70,9 @@ function VideoPageKannada() {
         <div className="videos-parent">
           <div className="center">
             <div className="videos">
-              <ul className="components-list">
+              <div className="components-list">
                 {videoList.map((video) => (
                   <>
-                    {/* <video autoPlay className="video-item">
-                    <source src={video} />
-                  </video> */}
-
                     <button
                       onClick={() => setIndex(videoList.indexOf(video))}
                       className="video-component"
@@ -84,9 +80,13 @@ function VideoPageKannada() {
                       {" "}
                       {names[videoList.indexOf(video)]}
                     </button>
+                    {/* <video autoPlay className="video-item">
+                    <source src={video} />
+                  </video> */}
+
                   </>
                 ))}
-              </ul>
+              </div>
 
               <video
                 src={videoList[index]}
