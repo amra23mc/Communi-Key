@@ -25,17 +25,17 @@ function VideoPage() {
                             {/*    </a>*/}
                             {/*</li>*/}
                             <li>
-                                <a className="dropdown-item" href="videoPage/Kannada">
+                                <a className="dropdown-item" href="/Kannada">
                                     Kannada
                                 </a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="videoPage/English">
+                                <a className="dropdown-item" href="/English">
                                     English
                                 </a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="videoPage/Hindi">
+                                <a className="dropdown-item" href="/Hindi">
                                     Hindi
                                 </a>
                             </li>

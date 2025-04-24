@@ -18,19 +18,19 @@ function App() {
                     <Routes>
                         <Route path="/" element={<VideoPage></VideoPage>} />
                         <Route
-                            path="videoPage/Kannada"
+                            path="/Kannada"
                             element={<VideoPageKannada />}
                         ></Route>
                         <Route
-                            path="videoPage/English"
+                            path="/English"
                             element={<VideoPageEnglish />}
                         ></Route>
                         <Route
-                            path="videoPage/Hindi"
+                            path="/Hindi"
                             element={<VideoPageHindi />}
                         ></Route>
                         <Route
-                            path="videoPage/Test"
+                            path="/Test"
                             element={<TestPage />}
                         ></Route>
                         <Route path="videoPage/Tamil" element={<VideoPageTamil />}></Route>
