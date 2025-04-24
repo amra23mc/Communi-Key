@@ -29,7 +29,7 @@ function testPage(){
     //  Ex:  ref(storage, 'videos/' + 'i'), i being the folder number
     //  it should be named appropriately (the number)
 
-    const [index, setIndex] = useState(0);
+    // const [index, setIndex] = useState(0);
 
     // TODO: use this name array for the header section
     // const names = [
