@@ -5,6 +5,8 @@ import VideoPage from "./Components/videoPage";
 import VideoPageKannada from "./Components/videoPageKannada";
 import VideoPageTamil from "./Components/videoPageTamil";
 import VideoPageTelugu from "./Components/videoPageTelugu";
+import VideoPageHindi from "./Components/videoPageHindi.tsx";
+import VideoPageEnglish from "./Components/videoPageEnglish.tsx";
 import TestPage from "./Components/testPage.tsx";
 
 
@@ -18,6 +20,14 @@ function App() {
                         <Route
                             path="videoPage/Kannada"
                             element={<VideoPageKannada />}
+                        ></Route>
+                        <Route
+                            path="videoPage/English"
+                            element={<VideoPageEnglish />}
+                        ></Route>
+                        <Route
+                            path="videoPage/Hindi"
+                            element={<VideoPageHindi />}
                         ></Route>
                         <Route
                             path="videoPage/Test"

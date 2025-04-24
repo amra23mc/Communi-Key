@@ -5,7 +5,7 @@ import "firebase/firestore";
 import { initializeApp } from "firebase/app";
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 
-function testPage (){
+function testPage(){
     const firebaseConfig = {
         apiKey: "AIzaSyCbJ6-Dosj1a2gC627XO9E8nBjLdkVwKXE",
         authDomain: "doctrina-6fb4a.firebaseapp.com",

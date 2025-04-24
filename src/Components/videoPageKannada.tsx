@@ -91,7 +91,6 @@ function VideoPageKannada() {
               <video
                 src={videoList[index]}
                 autoPlay
-                muted
                 controls
                 className="video-item"
               ></video>

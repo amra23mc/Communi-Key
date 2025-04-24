@@ -19,26 +19,36 @@ function VideoPage() {
                             Languages
                         </button>
                         <ul className="dropdown-menu">
-                            <li>
-                                <a className="dropdown-item" href="videoPage/Test">
-                                    Test
-                                </a>
-                            </li>
+                            {/*<li>*/}
+                            {/*    <a className="dropdown-item" href="videoPage/Test">*/}
+                            {/*        Test*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                             <li>
                                 <a className="dropdown-item" href="videoPage/Kannada">
                                     Kannada
                                 </a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="videoPage/Tamil">
-                                    Tamil
+                                <a className="dropdown-item" href="videoPage/English">
+                                    English
                                 </a>
                             </li>
                             <li>
-                                <a className="dropdown-item" href="videoPage/Telugu">
-                                    Telugu
+                                <a className="dropdown-item" href="videoPage/Hindi">
+                                    Hindi
                                 </a>
                             </li>
+                            {/*<li>*/}
+                            {/*    <a className="dropdown-item" href="videoPage/Tamil">*/}
+                            {/*        Tamil*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
+                            {/*<li>*/}
+                            {/*    <a className="dropdown-item" href="videoPage/Telugu">*/}
+                            {/*        Telugu*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                         </ul>
                     </div>
                 </div>
