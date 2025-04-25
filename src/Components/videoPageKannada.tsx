@@ -31,13 +31,7 @@ function VideoPageKannada() {
   const [index, setIndex] = useState(0);
 
   const names = [
-    "Last Minute Math",
-    "Game Night",
-    "Questions",
-    "Shortcut Method",
-    "Video 5",
-    "Video 6",
-    "Video 7",
+    "Video 1"
   ];
 
   useEffect(() => {
