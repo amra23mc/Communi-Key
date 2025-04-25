@@ -55,7 +55,7 @@ function VideoPageHindi() {
 
             <div className="videoPage">
                 <nav className="navbar-videos m-2">
-                    <div className="center">
+                    <div className="">
                         <a href="/">
                             <button className="btn btn-warning">Back</button>
                         </a>
