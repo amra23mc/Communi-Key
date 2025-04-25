@@ -29,11 +29,11 @@ function VideoPage() {
                                     Kannada
                                 </a>
                             </li>
-                            <li>
-                                <a className="dropdown-item" href="/English">
-                                    English
-                                </a>
-                            </li>
+                            {/*<li>*/}
+                            {/*    <a className="dropdown-item" href="/English">*/}
+                            {/*        English*/}
+                            {/*    </a>*/}
+                            {/*</li>*/}
                             <li>
                                 <a className="dropdown-item" href="/Hindi">
                                     Hindi
