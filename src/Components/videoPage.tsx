@@ -26,7 +26,17 @@ function VideoPage() {
                             {/*</li>*/}
                             <li>
                                 <a className="dropdown-item" href="/Kannada">
-                                    Kannada
+                                    ಕನ್ನಡ
+                                </a>
+                            </li>
+                            <li>
+                                <a className="dropdown-item" href="/Punjabi">
+                                    ਪੰਜਾਬੀ
+                                </a>
+                            </li>
+                            <li>
+                                <a className="dropdown-item" href="/Bengali">
+                                    বাংলা
                                 </a>
                             </li>
                             {/*<li>*/}
@@ -36,7 +46,7 @@ function VideoPage() {
                             {/*</li>*/}
                             <li>
                                 <a className="dropdown-item" href="/Hindi">
-                                    Hindi
+                                    हिंदी
                                 </a>
                             </li>
                             {/*<li>*/}

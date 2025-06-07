@@ -8,6 +8,9 @@ import VideoPageTelugu from "./Components/videoPageTelugu";
 import VideoPageHindi from "./Components/videoPageHindi.tsx";
 import VideoPageEnglish from "./Components/videoPageEnglish.tsx";
 import TestPage from "./Components/testPage.tsx";
+import Pronunciation from "./Components/pronunciation.tsx";
+import VideoPagePunjabi from "./Components/videoPagePunjabi.tsx";
+import VideoPageBengali from "./Components/videoPageBengali.tsx";
 
 
 function App() {
@@ -22,12 +25,24 @@ function App() {
                             element={<VideoPageKannada />}
                         ></Route>
                         <Route
+                            path="/Pronunciation"
+                            element={<Pronunciation />}
+                        ></Route>
+                        <Route
                             path="/English"
                             element={<VideoPageEnglish />}
                         ></Route>
                         <Route
                             path="/Hindi"
                             element={<VideoPageHindi />}
+                        ></Route>
+                        <Route
+                            path="/Punjabi"
+                            element={<VideoPagePunjabi />}
+                        ></Route>
+                        <Route
+                            path="/Bengali"
+                            element={<VideoPageBengali />}
                         ></Route>
                         <Route
                             path="/Test"
