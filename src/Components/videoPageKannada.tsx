@@ -55,7 +55,7 @@ function VideoPageKannada() {
       <div className="videoPage">
         <nav className="navbar-videos m-2">
           <div className="">
-            <a href="/">
+            <a href="/videoPage">
               <button className="btn btn-warning">Back</button>
             </a>
           </div>

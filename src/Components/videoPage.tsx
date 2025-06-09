@@ -9,7 +9,7 @@ function VideoPage() {
                     <h1 className="selectToCont">Select a language to continue</h1>
                 </div>
                 <div className="center">
-                    <div className="dropdown">
+                    <div className="dropdown dropdown-menu-dark justify-content-center align-items-center">
                         <button
                             className="btn btn-secondary dropdown-toggle m-2"
                             type="button"

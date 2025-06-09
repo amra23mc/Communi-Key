@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import HomePage from "./Components/homePage";
 import VideoPage from "./Components/videoPage";
 import VideoPageKannada from "./Components/videoPageKannada";
 import VideoPageTamil from "./Components/videoPageTamil";
@@ -11,14 +12,32 @@ import TestPage from "./Components/testPage.tsx";
 import VideoPagePunjabi from "./Components/videoPagePunjabi.tsx";
 import VideoPageBengali from "./Components/videoPageBengali.tsx";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+
 
 function App() {
     return (
         <>
             <div>
+                <nav className="navbar fixed-bottom border-primary navbar-dark  align-content-center justify-content-center ">
+                    <div>
+                        <a className="navbar-brand mx-5" href="/">
+                            <FontAwesomeIcon className={"fa-2x"} style={{color: "#FF6161"}} icon={faHouse}/>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a className="navbar-brand mx-5" href="/videoPage">
+                            <FontAwesomeIcon className={"fa-2x"} style={{color: "#FF6161"}} icon={faCirclePlay}/>
+                        </a>
+                    </div>
+
+                </nav>
                 <Router>
                     <Routes>
-                        <Route path="/" element={<VideoPage></VideoPage>} />
+                        <Route path="/" element={<HomePage></HomePage>} />
+                        <Route path = "/videoPage" element={<VideoPage />} />
                         <Route
                             path="/Kannada"
                             element={<VideoPageKannada />}
