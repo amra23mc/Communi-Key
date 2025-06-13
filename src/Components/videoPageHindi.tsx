@@ -36,12 +36,16 @@ function VideoPageHindi() {
     ];
 
     useEffect(() => {
-        listAll(videoListRef).then((response) => {
-            response.items.forEach((item) => {
-                getDownloadURL(item).then((url) => {
-                    setVideoList((prev) => [...prev, url]);
-                });
-            });
+        listAll(videoListRef).then(async (response) => {
+            // Sort files by name
+            const sortedItems = response.items.sort((a, b) => a.name.localeCompare(b.name));
+
+            // Fetch URLs in sorted order
+            const urls = await Promise.all(
+                sortedItems.map((item) => getDownloadURL(item))
+            );
+
+            setVideoList(urls);
         });
     }, []);
 
