@@ -22,7 +22,7 @@ function testPage(){
 
     const [videoList, setVideoList] = useState<string[]>([]);
 
-    const videoListRef = ref(storage, "videos/Kannada");
+    const videoListRef = ref(storage, "videos/Punjabi");
 
     // TODO: to add multiple folders and render them, all you have to do is have multiple
     //  folder arrays, and each should reference a folder easily

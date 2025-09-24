@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomePage from "./Components/homePage";
 import VideoPage from "./Components/videoPage";
+import VideoPageSL from "./Components/videoPageSL.tsx";
 import VideoPageKannada from "./Components/videoPageKannada";
 import VideoPageTamil from "./Components/videoPageTamil";
 import VideoPageTelugu from "./Components/videoPageTelugu";
@@ -38,6 +39,10 @@ function App() {
                     <Routes>
                         <Route path="/" element={<HomePage></HomePage>} />
                         <Route path = "/videoPage" element={<VideoPage />} />
+                        <Route
+                            path="/SL"
+                            element={<VideoPageSL />}
+                        ></Route>
                         <Route
                             path="/Kannada"
                             element={<VideoPageKannada />}
